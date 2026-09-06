@@ -15,7 +15,7 @@ class _NewTaskScreenState extends State<NewTaskScreen> {
       appBar: TmAppbar(),
       body: Column(
         children: [
-          Column(children: [Text("10"), Text("20")]),
+          Column(children: [Text("10")]),
         ],
       ),
     );
