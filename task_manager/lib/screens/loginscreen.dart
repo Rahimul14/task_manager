@@ -1,6 +1,5 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:task_manager/background/screen_background.dart';
 import 'package:task_manager/screens/email_verify.dart';
 
 import 'package:task_manager/screens/main_nav_screen.dart';
