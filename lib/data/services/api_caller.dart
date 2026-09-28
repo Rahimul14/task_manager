@@ -23,4 +23,25 @@ class ApiCaller {
       );
     }
   }
+
+   // ignore: non_constant_identifier_names
+   static Future<ApiResponce> postRequest({required String URL, Map<String, dynamic>?body})async {
+    Uri uri = Uri.parse(URL);
+
+    Response response = await get(uri, headers: {});
+
+    if (response.statusCode == 200) {
+      return ApiResponce(
+        responseCode: response.statusCode,
+        responseDate: jsonDecode(response.body),
+        isSuccess: true,
+      );
+    } else {
+      return ApiResponce(
+        responseCode: response.statusCode,
+        responseDate: jsonDecode(response.body),
+        isSuccess: false,
+      );
+    }
+  }
 }
